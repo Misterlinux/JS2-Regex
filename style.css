@@ -1,0 +1,165 @@
+html,body,div,form,fieldset,h1,h2,h3,h4,h5,h6,p,blockquote,pre,li,ul,ol
+{
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    border: 0;
+    outline: 0;
+    background: transparent;
+
+    list-style: none;
+}
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+th,
+td
+{
+    text-align: left;
+    vertical-align: top;
+}
+img
+{
+    border: 0;
+}
+
+/*starting with special tag on click*/
+
+span.highlight {
+    color: red;
+    background-color: bisque;
+    z-index: 2;
+}
+
+html{
+    background: linear-gradient(-100deg, white, rgb(226, 197, 167), white);
+}
+
+h1.titolo{
+    font-size: larger;
+}
+
+#lorem{
+    background-color: white;
+    padding: 0.5em 0.2em;
+    margin: 0em 2em;
+    margin-left: 5em;
+}
+
+/* text and filter */
+.layer1{
+    display: flex;
+    flex-direction: row;
+}
+
+.layer1 div:first-child{
+    flex: 3;
+    flex-direction: column;
+    margin: 10px 0.5em;
+}
+
+.layer1 div:nth-child(2){
+    flex: 1;
+    flex-direction: column;
+    margin: 10px 1em;
+    margin-right: 6em;
+
+}
+
+.layer1 div:nth-child(2) form select{
+    width: 105%;
+}
+
+.layer1 div:nth-child(2) form input{
+    width: 100%;
+}
+
+#primobotto{
+    width: 50%;
+}
+
+#fatto{
+    text-align: center;
+    margin: 0.2em 0px;
+}
+
+.timed div{
+    text-align: center;
+}
+
+/* this is the second block for the timer */
+
+.titolo{
+    text-align: center;
+    margin: 0.3em 0px;
+}
+
+.personaggi{
+    display: flex;
+    margin: 0.6em auto;
+}
+
+.personaggi div{
+    flex: 1;
+    text-align: center;
+}
+
+.rules{
+    font-size: small;
+    margin: auto;
+    width: 85%;
+}
+
+.layer2{
+    display: flex;
+    margin: 0.6em 0px;
+}
+
+.layer2 div:first-child{
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+}
+
+.layer2 div:nth-child(2){
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.dissapear1{
+    display: none
+}
+
+@media only screen and (max-width: 500px){
+
+    #lorem{
+        margin: 0em 2em;
+    }
+
+    .dissapear{
+        display: none;
+    }
+
+    .timed{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .timed div:first-child{
+        text-align: center;
+    }
+    
+    .dissapear1{
+        display: block;
+    }
+
+    .dissapear1 form input,select{
+        width: 8em;
+    }
+}

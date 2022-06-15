@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 class="titolo"><b>Welcome to the text filter game</b></h1>
+
+    <div class="layer1">
+        <div id="lorem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit elit. Magni iure doloremque maiores cupiditate quae! Sed dolorum
+            quibusdam ex Lorem vero optio assumenda tenetur iure dolor molestiae, eius eum sequi dolore repellat.
+            Adipisci, magni Lorem dicta accusamus corporis  ullam debitis assumenda elit voluptatem tenetur voluptates labore aliquam voluptas
+            earum maiores facere ratione tempora    et eligendi quidem quibusdam? Et consequuntur quas accusamus nostrum eos. Quia!
+        </div>
+
+        <div class="dissapear">
+            <p>Optional text filter</p>
+            <form id="fatto">
+                <input id="cosa" type="text" placeholder="which word"><br>
+                <select id="quanto">
+                    <option value="">-Choose one option-</option>
+                    <option value="primo">Solo il primo</option>
+                    <option value="tutti">Tutti </option>
+                </select>
+                <input type="submit" value="Start" id="primobotto" style="margin-top: 0.3em">
+            </form>
+
+            <p id="sotto"></p>
+        </div>
+    </div>
+
+    <div class="timed">
+        <div>
+            <div> Time passed </div>
+            <span id="timo" > 0 00 </span>
+        </div>
+
+        <div class="dissapear1">
+            <p>Optional text filter</p>
+            <form id="fatto">
+                <input id="cosa" type="text" placeholder="which word"><br>
+                <select id="quanto">
+                    <option value="">-Choose one option-</option>
+                    <option value="primo">Solo il primo</option>
+                    <option value="tutti">Tutti </option>
+                </select><br>
+                <input type="submit" value="Start" id="primobotto" style="margin-top: 0.3em">
+            </form>
+
+            <p id="sotto"></p>
+        </div>
+
+    </div>
+
+    <h2 class="titolo">Pick your Names</h2>
+
+    <div class="personaggi">
+        <div>
+            <input type="text" id="primero" value="Giocatore1">
+            <div id="past">
+            </div>
+        </div>
+        <div>
+            <input type="text" id="segundo" value="Giocatore2">
+            <div id="fut">
+            </div>
+        </div>
+    </div>
+
+    <p class="rules">
+        On Target Read player1 substitutes a word from the text, 
+        player2 has to click it while the timer.
+        In target practice player1 can add a new word in a random position and player2
+        has to click it while the timer.
+        Remember that words have to be longer than 3 digits and no empty white spaces.
+    </p>
+
+    <div class="layer2">
+        <div>
+            <h2><b>Target word</b></h2>
+
+            <form id="roll">
+                <input type="text" id="cambiare" value="">
+                <br>
+                <p>change with</p>
+                <input type="text" id="cambiato" value=""><br>
+                <input type="submit" value="Go" style="margin-top: 0.3em">
+            </form>
+            <p id="sotta"></p>
+        </div>
+
+        <div>
+            <h2><b>Random in text</b></h2>
+
+            <form id="random">
+                <input type="text" id="casuale">
+                <input type="submit" value="Go" >
+            </form>
+            <p id="sottin"></p>
+        </div>
+
+    </div>
+    
+    <script src="./script.js">
+    </script>
+
+</body>
+</html>
